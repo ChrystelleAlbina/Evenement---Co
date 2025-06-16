@@ -1,0 +1,64 @@
+/* photo hotel */
+.hotel {
+    background-repeat: no-repeat;
+    margin: 0%;
+}
+
+/* image logo */
+.logo {
+    margin-left: 10px;
+    z-index: 10;
+    position: absolute;
+    top: 7%;
+    left: 5px;
+}
+
+/* menu burger */
+.menuBurger {
+    margin-right: 5px;
+    width: auto;
+    justify-self: end;
+}
+
+/* titre d'accueil */
+.titleAccueil {
+    font-size: 0.6rem;
+    font-family: avangarde, helvetica, sans-serif;
+}
+
+/* paragraphe */
+.welcomeAccueil {
+    font-size: 0.90rem;
+    font-family: avangarde, helvetica, sans-serif;
+    background-color: #c0d9b88a;
+    padding: 2px;
+    text-align: center;
+}
+
+/* tous les sous titres */
+.subtitleAccueil {
+    font-size: 0.7rem;
+    font-family: avangarde, helvetica, sans-serif;
+    text-align: center;
+}
+
+/* descriptions des sous titres */
+.vieAccueil {
+    background-color: #c0d9b88a;
+    padding: 2px;
+    text-align: left;
+    font-size: 0.8rem;
+    font-family: avangarde, helvetica, sans-serif;
+}
+
+adresse {
+    font-family: avangarde, helvetica, sans-serif;
+    font-size: 0.7rem;
+    font-style: none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
