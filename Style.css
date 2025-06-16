@@ -1,7 +1,8 @@
 /* photo hotel */
 .hotel {
     background-repeat: no-repeat;
-    margin: 0%;
+    background-size: cover;
+    margin: 0px; 
 }
 
 /* image logo */
@@ -61,4 +62,39 @@ adresse {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+/* page activités */
+.titleActivites {
+    font-size: 0.45rem;
+    font-family: avangarde, helvetica, sans-serif;
+    text-align: center;
+    width: 90%;
+    color: #14310A;
+}
+/* photo en colonne */
+.activites-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+}
+
+.activite {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f0f5f1;
+    padding: 5px;
+}
+
+.activite img {
+    width: 72px;
+    height: 66px;
+}
+
+.activite p {
+    font-family: avangarde, helvetica, sans-serif;
+    font-size: 0.85rem;
+    margin: 0;
+    color: #14310A;
 }
