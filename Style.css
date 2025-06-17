@@ -2,7 +2,7 @@
 .hotel {
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0px; 
+    margin: 0px;
 }
 
 /* image logo */
@@ -20,6 +20,9 @@
     width: auto;
     justify-self: end;
 }
+.menuBurger:active {
+    color: black;
+}
 
 /* titre d'accueil */
 .titleAccueil {
@@ -29,11 +32,13 @@
 
 /* paragraphe */
 .welcomeAccueil {
-    font-size: 0.90rem;
+    font-size: 1rem;
     font-family: avangarde, helvetica, sans-serif;
     background-color: #c0d9b88a;
     padding: 2px;
     text-align: center;
+    margin: 10px;
+    width: 100%;
 }
 
 /* tous les sous titres */
@@ -48,8 +53,10 @@
     background-color: #c0d9b88a;
     padding: 2px;
     text-align: left;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: avangarde, helvetica, sans-serif;
+    margin: 10px;
+    width: 100%;
 }
 
 adresse {
@@ -58,11 +65,12 @@ adresse {
     font-style: none;
 }
 
+/* copyright */
 .footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
+
 /* page activités */
 .titleActivites {
     font-size: 0.45rem;
@@ -71,6 +79,7 @@ adresse {
     width: 90%;
     color: #14310A;
 }
+
 /* photo en colonne */
 .activites-container {
     display: flex;
@@ -97,4 +106,69 @@ adresse {
     font-size: 0.85rem;
     margin: 0;
     color: #14310A;
+}
+
+/* contact */
+.InfoContact {
+    font-family: avangarde, helvetica, sans-serif;
+    background-color: #c0d9b88a;
+    padding: 0px 5px 0px 5px;
+    align-items: center;
+}
+
+/* formulaire */
+.formContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #c0d9b88a;
+    border-radius: 10px;
+    width: 70%;
+    height: 200px;
+    margin: 10px;
+    border: #14310A 1px solid;
+}
+
+.formContact input,
+.formContact textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #14310A;
+    font-family: avangarde, helvetica, sans-serif;
+    box-shadow: #14310A;
+}
+
+.button {
+    background-color: #277a0bb1;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #359612;
+}
+
+.button::before {
+    content: "";
+    font-family: avangarde, helvetica, sans-serif;
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+}
+
+.button ::after {
+    content: "Done";
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+/*bas-page contact */
+.accessContact{
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    position: fixed;
 }
