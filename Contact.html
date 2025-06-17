@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>contact</title>
 </head>
+
 <body>
     <header>
         <div class="hotel">
@@ -14,38 +16,64 @@
                 aria-label=" photo image hotel Baobab en bois" alt="photo image hotel Baobab en bois" max-width="100%"
                 height="140px">
         </div>
-        <div class="logo">
+         <div class="logoEvent">
             <img src="image evenementiel & Co/logo.webp" aria-label="logo hotel evenement & Co"
                 alt="logo hotel evenement & Co" width="54px" height="54px">
         </div>
-        <div class="menuBurger">
-            <a href="menuBurger.html"><img src="image evenementiel & Co/menu-burger-horizontal-svgrepo-com.svg"
-                    aria-label="menu" alt="menu" height="20vh"></a>
-                    <a href="Index.html">Index</a>
-                    <a href="Activités.html">Activités</a>
-        </div>
+        <nav class="navbar">
+            <div class="menu-icon"></div>
+            
+            <!-- checkbox pour contrôler le menu -->
+            <input id="menu-toggle" type="checkbox" class="menu-checkbox" />
+
+            <!-- label pour icone svg -->
+            <label for="menu-toggle" class="menu-icon" aria-label="ouvrir le menu">
+                <svg width="30" height="30" viewBox="0 0 100 80" fill="black">
+                    <rect width="100" height="10"></rect>
+                    <rect y="30" width="100" height="10"></rect>
+                    <rect y="30" width="100" height="10"></rect>
+                </svg>
+            </label>
+
+            <!--  fond semi transparent -->
+            <div class="overlay"></div>
+
+            <!-- Menu de navigation -->
+            <ul class="nav-links">
+                <li><a href="Index.html">Index</a></li>
+                <li><a href="Activités.html">Activités</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <div class="InfoContact" >
+        <div class="InfoContact">
             <p>
-                Vous souhaitez nous contacter ? <br>voir des informations, réserver une date, le formulaire de contact est à votre disposition. Vous avez la possibilité de venir sur place afin de nous rencontrer et visiter les lieux.
+                Vous souhaitez nous contacter ? <br>voir des informations, réserver une date, le formulaire de contact
+                est à votre disposition. Vous avez la possibilité de venir sur place afin de nous rencontrer et visiter
+                les lieux.
             </p>
         </div>
-       <form class="formContact">
-    <input class="input" type="text" placeholder="Nom">
-    <input class="input" type="text" placeholder="E-Mail">
-    <textarea class="textarea" placeholder="Message"></textarea> 
-    <center><button class="button">Envoyer</button></center>
-</form>
+        <form class="formContact">
+            <input class="input" type="text" placeholder="Nom">
+            <input class="input" type="text" placeholder="E-Mail">
+            <textarea class="textarea" placeholder="Message"></textarea>
+            <center><button class="button">Envoyer</button></center>
+        </form>
         <div class="accessContact">
             <img src="image evenementiel & Co/Handicap.webp" alt="LOGO PMR " aria-label="LOGO PMR">
             <img src="image evenementiel & Co/Recyclage.webp" alt="logo recyclage" aria-label="logo recyclage">
-            <img src="image evenementiel & Co/no-motor-vehicles.webp" alt="Logo voiture interdite" aria-label="Logo voiture interdite">
-            <img src="image evenementiel & Co/facebook-5-logo-svgrepo-com.webp" alt="logo Facebook" aria-label="logo Facebook" max-width="40px" height="40px">
-            <img src="image evenementiel & Co/instagram.webp" alt="logo Instagram" aria-label="logo Instagram" max-width="40px" height="40px">
-            <img src="image evenementiel & Co/compost.webp" alt="compost" aria-label="compost" max-width="40px" height="40px">
+            <img src="image evenementiel & Co/no-motor-vehicles.webp" alt="Logo voiture interdite"
+                aria-label="Logo voiture interdite">
+            <img src="image evenementiel & Co/facebook-5-logo-svgrepo-com.webp" alt="logo Facebook"
+                aria-label="logo Facebook" max-width="40px" height="40px">
+            <img src="image evenementiel & Co/instagram.webp" alt="logo Instagram" aria-label="logo Instagram"
+                max-width="40px" height="40px">
+            <img src="image evenementiel & Co/compost.webp" alt="compost" aria-label="compost" max-width="40px"
+                height="40px">
 
         </div>
     </main>
 </body>
+
 </html>

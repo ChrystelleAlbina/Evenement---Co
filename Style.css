@@ -1,3 +1,4 @@
+/* Mobile First */
 /* photo hotel */
 .hotel {
     background-repeat: no-repeat;
@@ -6,7 +7,7 @@
 }
 
 /* image logo */
-.logo {
+.logoEvent {
     margin-left: 10px;
     z-index: 10;
     position: absolute;
@@ -15,14 +16,117 @@
 }
 
 /* menu burger */
-.menuBurger {
-    margin-right: 5px;
-    width: auto;
-    justify-self: end;
+
+
+/* TEST */
+/* .navbar {
+    position: relative;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 1em;
+} */
+
+.logo {
+    font-size: 1.5em;
 }
-.menuBurger:active {
-    color: black;
+
+.menu-checkbox {
+    display: none;
 }
+
+/* icone burger */
+.menu-icon {
+    cursor: pointer;
+}
+
+/* menu navigation mobile */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    background-color: #13ab3ccb;
+    list-style: none;
+    margin: 0;
+    padding: 30px;
+    text-align: right;
+}
+
+/* .nav-links li {
+    padding: 10px;
+    text-align: center;
+    border-top: #359612 1px solid;
+} */
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+    font-family: avangarde, helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 0.5em;
+}
+
+
+/* fond overlay */
+.overlay {
+    position: fixed;
+}
+
+/* menu actif */
+.menu-checkbox:checked~.overlay {
+    display: block;
+}
+
+.menu-checkbox:checked~.nav-links {
+    display: flex;
+}
+
+/* min-width ??px */
+
+@media (min-width: 768px) {
+
+    /* .menu-checkbox {
+        display: none;
+    } */
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        gap: 2em;
+        z-index: auto;
+    }
+
+    .nav-links li {
+        border-top: none;
+    }
+
+    /* .nav-links li a {
+        padding: 0.5em 1em;
+    }
+
+    .overlay {
+        display: none;
+    } */
+}
+
+/* FIN DE TEST */
+
+
+
+
+
+
+
 
 /* titre d'accueil */
 .titleAccueil {
@@ -59,6 +163,7 @@
     width: 100%;
 }
 
+/* Adresse */
 adresse {
     font-family: avangarde, helvetica, sans-serif;
     font-size: 0.7rem;
@@ -96,6 +201,7 @@ adresse {
     padding: 5px;
 }
 
+/* Taille image */
 .activite img {
     width: 72px;
     height: 66px;
@@ -166,9 +272,8 @@ adresse {
 }
 
 /*bas-page contact */
-.accessContact{
+.accessContact {
     bottom: 0;
     width: 100%;
     height: auto;
-    position: fixed;
 }
