@@ -4,134 +4,49 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px;
+    padding: 0px;
 }
+
+.hotel img {
+    width: 100%;
+    height: 300px;         /* ↩️ Hauteur fixe pour un effet "bannière" */
+    object-fit: cover;     /* Recadre l’image sans la déformer */
+    display: block;
+    margin: 0 auto;
+}
+
+
 
 /* image logo */
 .logoEvent {
     margin-left: 10px;
     z-index: 10;
     position: absolute;
-    top: 7%;
+    top: 10%;
     left: 5px;
-}
-
-/* menu burger */
-
-
-/* TEST */
-/* .navbar {
-    position: relative;
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    padding: 1em;
-} */
-
-.logo {
-    font-size: 1.5em;
-}
-
-.menu-checkbox {
-    display: none;
-}
-
-/* icone burger */
-.menu-icon {
-    cursor: pointer;
+    width: 100%;
+    height: auto; 
 }
 
 /* menu navigation mobile */
-.nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    background-color: #13ab3ccb;
-    list-style: none;
-    margin: 0;
-    padding: 30px;
+#navbarNav {
+    justify-content: space-between;
     text-align: right;
-}
-
-/* .nav-links li {
-    padding: 10px;
-    text-align: center;
-    border-top: #359612 1px solid;
-} */
-
-a {
-    text-decoration: none !important;
-    color: black !important;
+    color: black;
+    padding: 1em;
+    border: rgb(17, 94, 21) 1px solid;
+    background-color: #86b86daa;
+    box-shadow: #12965894 3px 0px 2px 2px;
     font-family: avangarde, helvetica, sans-serif;
-    font-size: 1.5rem;
-    padding: 0.5em;
+    font-size: 2rem;
+    margin: 0 0 30px 0;
 }
-
-
-/* fond overlay */
-.overlay {
-    position: fixed;
-}
-
-/* menu actif */
-.menu-checkbox:checked~.overlay {
-    display: block;
-}
-
-.menu-checkbox:checked~.nav-links {
-    display: flex;
-}
-
-/* min-width ??px */
-
-@media (min-width: 768px) {
-
-    /* .menu-checkbox {
-        display: none;
-    } */
-    .menu-icon {
-        display: none;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        background-color: transparent;
-        gap: 2em;
-        z-index: auto;
-    }
-
-    .nav-links li {
-        border-top: none;
-    }
-
-    /* .nav-links li a {
-        padding: 0.5em 1em;
-    }
-
-    .overlay {
-        display: none;
-    } */
-}
-
-/* FIN DE TEST */
-
-
-
-
-
-
-
 
 /* titre d'accueil */
 .titleAccueil {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     font-family: avangarde, helvetica, sans-serif;
+    text-align: center;
 }
 
 /* paragraphe */
@@ -141,7 +56,7 @@ a {
     background-color: #c0d9b88a;
     padding: 2px;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     width: 100%;
 }
 
@@ -159,7 +74,7 @@ a {
     text-align: left;
     font-size: 1rem;
     font-family: avangarde, helvetica, sans-serif;
-    margin: 10px;
+    margin: 5px;
     width: 100%;
 }
 
@@ -171,18 +86,20 @@ adresse {
 }
 
 /* copyright */
-.footer {
+.footerAccueil {
     bottom: 0;
     width: 100%;
 }
 
 /* page activités */
 .titleActivites {
-    font-size: 0.45rem;
+    font-size: 2.5rem;
     font-family: avangarde, helvetica, sans-serif;
     text-align: center;
-    width: 90%;
+    width: 100%;
+    height: 30px;
     color: #14310A;
+    margin: 30px 0 30px 0;
 }
 
 /* photo en colonne */
@@ -209,7 +126,7 @@ adresse {
 
 .activite p {
     font-family: avangarde, helvetica, sans-serif;
-    font-size: 0.85rem;
+    font-size: 1rem;
     margin: 0;
     color: #14310A;
 }
@@ -227,13 +144,14 @@ adresse {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
     background-color: #c0d9b88a;
+    box-shadow: #359612 5px 5px 5px 0px;
     border-radius: 10px;
-    width: 70%;
-    height: 200px;
-    margin: 10px;
+    width: 90%;
+    height: 300px;
+    margin: 50px 0 30px 0;
     border: #14310A 1px solid;
 }
 
@@ -251,6 +169,7 @@ adresse {
     background-color: #277a0bb1;
     color: rgb(255, 255, 255);
     cursor: pointer;
+    box-shadow: #1bbc1e 5px 5px 5px 0px;
 }
 
 .button:hover {
@@ -260,8 +179,9 @@ adresse {
 .button::before {
     content: "";
     font-family: avangarde, helvetica, sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: rgb(255, 255, 255);
+
 }
 
 .button ::after {
@@ -272,8 +192,215 @@ adresse {
 }
 
 /*bas-page contact */
-.accessContact {
+.footerContact {
     bottom: 0;
     width: 100%;
     height: auto;
+    margin: 50px 0 0 0;
+    /* position: fixed; */
 }
+.github{
+    width: 1%;
+    display: flex;
+    position: relative;
+  bottom: 0;
+   left: 35%;
+}
+
+/* @medias queries  tablette et pc */
+@media screen and (min-width: 1496px) and (max-width: 1600px) {
+
+/* photo hotel */
+.hotel {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hotel img {
+        max-width: 100%; /* Peut aller jusqu'à la largeur de l'écran */
+    }
+
+/* image logo */
+.logoEvent {
+    margin-left: 10px;
+    z-index: 10;
+    position: absolute;
+    top: 5%;
+    left: 5px;
+    width: 100%;
+    height: auto;
+}
+
+    /* titre d'accueil */
+.titleAccueil {
+    font-size: 0.5rem;
+    font-family: avangarde, helvetica, sans-serif;
+    text-align: center;
+}
+
+/* paragraphe */
+.welcomeAccueil {
+    font-size: 1rem;
+    font-family: avangarde, helvetica, sans-serif;
+    background-color: #c0d9b88a;
+    padding: 2px;
+    text-align: center;
+    margin: 5px;
+    width: 100%;
+}
+
+/* tous les sous titres */
+.subtitleAccueil {
+    font-size: 0.7rem;
+    font-family: avangarde, helvetica, sans-serif;
+    text-align: center;
+}
+
+/* descriptions des sous titres */
+.vieAccueil {
+    background-color: #c0d9b88a;
+    padding: 2px;
+    text-align: left;
+    font-size: 1rem;
+    font-family: avangarde, helvetica, sans-serif;
+    margin: 5px;
+    width: 100%;
+}
+
+/* Adresse */
+adresse {
+    font-family: avangarde, helvetica, sans-serif;
+    font-size: 0.7rem;
+    font-style: none;
+}
+
+/* copyright */
+.footerAccueil {
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* page activités */
+.titleActivites {
+    font-size: 2.5rem;
+    font-family: avangarde, helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    color: #14310A;
+    margin: 30px 0 30px 0;
+}
+/* photo en colonne */
+.activites-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+}
+
+.activite {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f0f5f1;
+    padding: 5px;
+}
+
+/* Taille image */
+.activite img {
+    width: 92px;
+    height: 86px;
+}
+
+.activite p {
+    font-family: avangarde, helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    color: #14310A;
+}
+
+/* contact */
+.InfoContact {
+    font-family: avangarde, helvetica, sans-serif;
+    background-color: #c0d9b88a;
+    padding: 0px 5px 0px 5px;
+    align-items: center;
+    margin: 10px;
+}
+    /* formulaire */
+.formContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #c0d9b88a;
+    box-shadow: #359612 5px 5px 5px 0px;
+    border-radius: 10px;
+    width: 70%;
+    height: 300px;
+    margin: 10px;
+    border: #14310A 1px solid;
+}
+
+    .formContact input,
+    .formContact textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #14310A;
+        font-family: avangarde, helvetica, sans-serif;
+        box-shadow: #14310A;
+    }
+
+    .formContact {
+        width: 50%;
+        height: auto;
+    }
+
+    .button {
+        background-color: #277a0bb1;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        box-shadow: #1bbc1e 5px 5px 5px 0px;
+    }
+
+    .button:hover {
+        background-color: #359612;
+    }
+
+    .button::before {
+        content: "";
+        font-family: avangarde, helvetica, sans-serif;
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+
+    }
+
+    .button ::after {
+        content: "Done";
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .accessContact {
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        border: black 1px solid;
+        
+    }
+.github{
+    width: 1%;
+    display: flex;
+    position: relative;
+  bottom: 0;
+   left: 35%;
+}
+}
+
