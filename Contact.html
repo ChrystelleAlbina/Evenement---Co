@@ -15,14 +15,15 @@
 <body>
     <header>
        <div class="hotel"> 
-    <img src="image evenementiel & Co/Hotel baobab.webp"
-         aria-label="Photo de l'hôtel Baobab en bois"
-         alt="Photo de l'hôtel Baobab en bois">
-</div>
+    <link rel="preload" as="image" href="image evenementiel & Co/Hotel baobab.webp">
+
+            <img src="image evenementiel & Co/Hotel baobab.webp" aria-label="Photo de l'hôtel Baobab en bois"
+                alt="Photo de l'hôtel Baobab en boisloat" loading="eager">
+        </div>
 
         <div class="logoEvent">
             <img src="image evenementiel & Co/logo.webp" aria-label="logo hotel evenement & Co"
-                alt="logo hotel evenement & Co">
+                alt="logo hotel evenement & Co" loading="lazy">
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -68,18 +69,18 @@
     </main>
     <footer>
         <div class="footerContact">
-            <img src="image evenementiel & Co/Handicap.webp" alt="LOGO PMR " aria-label="LOGO PMR">
-            <img src="image evenementiel & Co/Recyclage.webp" alt="logo recyclage" aria-label="logo recyclage">
+            <img src="image evenementiel & Co/Handicap.webp" alt="LOGO PMR " aria-label="LOGO PMR" loading="lazy">
+            <img src="image evenementiel & Co/Recyclage.webp" alt="logo recyclage" aria-label="logo recyclage" loading="lazy">
             <img src="image evenementiel & Co/no-motor-vehicles.webp" alt="Logo voiture interdite"
-                aria-label="Logo voiture interdite">
+                aria-label="Logo voiture interdite" loading="lazy">
             <img src="image evenementiel & Co/facebook-5-logo-svgrepo-com.webp" alt="logo Facebook"
-                aria-label="logo Facebook" max-width="40px" height="40px">
+                aria-label="logo Facebook" max-width="40px" height="40px" loading="lazy">
             <img src="image evenementiel & Co/instagram.webp" alt="logo Instagram" aria-label="logo Instagram"
-                max-width="40px" height="40px">
+                max-width="40px" height="40px" loading="lazy">
             <img src="image evenementiel & Co/compost.webp" alt="compost" aria-label="compost" max-width="40px"
-                height="40px">
+                height="40px" loading="lazy">
             <a href="https://github.com/ChrystelleAlbina" target="_blank">
-                <i class="fab fa-github"></i>
+                <i class="fab fa-github" loading="lazy"></i>
             </a>
         </div>
     </footer>

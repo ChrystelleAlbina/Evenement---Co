@@ -14,14 +14,15 @@
 <body>
     <header>
         <div class="hotel"> 
-    <img src="image evenementiel & Co/Hotel baobab.webp"
-         aria-label="Photo de l'hôtel Baobab en bois"
-         alt="Photo de l'hôtel Baobab en bois">
-</div>
+    <link rel="preload" as="image" href="image evenementiel & Co/Hotel baobab.webp">
+
+            <img src="image evenementiel & Co/Hotel baobab.webp" aria-label="Photo de l'hôtel Baobab en bois"
+                alt="Photo de l'hôtel Baobab en boisloat" loading="eager">
+        </div>
 
         <div class="logoEvent">
             <img src="image evenementiel & Co/logo.webp" aria-label="logo hotel evenement & Co"
-                alt="logo hotel evenement & Co">
+                alt="logo hotel evenement & Co" loading="lazy">
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
