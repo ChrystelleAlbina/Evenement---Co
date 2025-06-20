@@ -9,21 +9,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="image" href="imageEvenementiel/HotelBaobab.webp">
+    <link rel="preload" as="image" href="imageEvenementiel/logo.webp">
     <title>Activités</title>
 </head>
 
 <body>
     <header>
         <div class="hotel">
-            <link rel="preload" as="image" href="image evenementiel & Co/Hotel baobab.webp">
-
-            <img src="image evenementiel & Co/Hotel baobab.webp" aria-label="Photo de l'hôtel Baobab en bois"
-                alt="Photo de l'hôtel Baobab en boisloat" loading="eager">
+            <img src="imageEvenementiel/HotelBaobab.webp" loading="eager" fetchpriority="high"
+                aria-label="Photo de l'hôtel Baobab en bois" alt="Photo de l'hôtel Baobab en boisloat">
         </div>
 
         <div class="logoEvent">
-            <img src="image evenementiel & Co/logo.webp" aria-label="logo hotel evenement & Co"
-                alt="logo hotel evenement & Co" loading="lazy">
+            <img src="imageEvenementiel/logo.webp" aria-label="logo hotel evenement & Co"
+                alt="logo hotel evenement & Co" loading="eager">
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -55,37 +55,37 @@
 
         <div class="activites-container">
             <div class="activite">
-                <img src="image evenementiel & Co/accrobranche.webp" alt="Accrobranche" aria-label="Accrobranche" loading="lazy">
+                <img src="imageEvenementiel/accrobranche.webp" alt="Accrobranche" aria-label="Accrobranche"
+                    loading="lazy">
                 <p>Accrobranche, mur d'escalade, parcours VTT</p>
             </div>
 
             <div class="activite">
-                <img src="image evenementiel & Co/Sentier.webp" alt="sentier dans la foret"
-                    aria-label="Sentier dans la forêt" loading="lazy">
+                <img src="imageEvenementiel/Sentier.webp" alt="sentier dans la foret" aria-label="Sentier dans la forêt"
+                    loading="lazy">
                 <p>Sentier, observation des animaux</p>
             </div>
 
             <div class="activite">
-                <img src="image evenementiel & Co/cheminee.webp" alt="cheminée" aria-label="Cheminée" loading="lazy">
+                <img src="imageEvenementiel/cheminee.webp" alt="cheminée" aria-label="Cheminée" loading="lazy">
                 <p>Zone de repos, cheminée, bibliothèque</p>
             </div>
 
             <h1 class="titleActivites">Restauration</h1>
             <div class="activite">
-                <img src="image evenementiel & Co/panier-de-saison_-mini-légumes.webp"
-                    alt="panier-de-saison_-mini-légumes" aria-label="Panier de saison avec mini-légumes" loading="lazy">
+                <img src="imageEvenementiel/panier.webp" alt="panier-de-saison_-mini-légumes"
+                    aria-label="Panier de saison avec mini-légumes" loading="lazy">
                 <p>Cuisine locale et de saison</p>
             </div>
 
             <div class="activite">
-                <img src="image evenementiel & Co/Planche-Apéro-_-Idées-et-Recettes-pour-Créer-des….webp"
-                    alt="Planche-Apéro-_-Idées-et-Recettes-pour-Créer-des…"
+                <img src="imageEvenementiel/Planche-Apéro.webp" alt="Planche-Apéro-_-Idées-et-Recettes-pour-Créer-des…"
                     aria-label="Planche apéro avec idées et recettes" loading="lazy">
                 <p>Légumes de jardin bio</p>
             </div>
             <div class="activite">
-                <img src="image evenementiel & Co/repas.webp" alt="plateau de charcuterie"
-                    aria-label="Plateau de charcuterie" loading="lazy">
+                <img src="imageEvenementiel/repas.webp" alt="plateau de charcuterie" aria-label="Plateau de charcuterie"
+                    loading="lazy">
                 <p>Produit de partenairs locaux. Viande, oeuf, volailles</p>
             </div>
         </div>
