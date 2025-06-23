@@ -1,64 +1,267 @@
-/* photo hotel */
+/* style-purge.css */
+
 .hotel {
-    background-repeat: no-repeat;
-    margin: 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
-/* image logo */
-.logo {
-    margin-left: 10px;
-    z-index: 10;
-    position: absolute;
-    top: 7%;
-    left: 5px;
+.hotel img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
-/* menu burger */
-.menuBurger {
-    margin-right: 5px;
-    width: auto;
-    justify-self: end;
+.logoEvent {
+  margin-left: 10px;
+  z-index: 10;
+  position: absolute;
+  top: 10%;
+  left: 5px;
+  width: 100%;
+  height: auto;
 }
 
-/* titre d'accueil */
+#navbarNav {
+  justify-content: space-between;
+  text-align: right;
+  background-color: #86b86daa;
+  color: black;
+  box-shadow: #12965894 3px 0px 2px 2px;
+  border: rgb(17, 94, 21) 1px solid;
+  padding: 1em;
+  font-family: avangarde, helvetica, sans-serif;
+  font-size: 2rem;
+  margin: 0 0 30px 0;
+}
+
+.titleAccueil,
+.subtitleAccueil,
+.welcomeAccueil,
+.vieAccueil,
+.titleActivites,
+.activite p,
+.InfoContact,
+.formContact input,
+.formContact textarea,
+.button {
+  font-family: avangarde, helvetica, sans-serif;
+}
+
 .titleAccueil {
-    font-size: 0.6rem;
-    font-family: avangarde, helvetica, sans-serif;
+  font-size: 0.5rem;
+  text-align: center;
 }
 
-/* paragraphe */
 .welcomeAccueil {
-    font-size: 0.90rem;
-    font-family: avangarde, helvetica, sans-serif;
-    background-color: #c0d9b88a;
-    padding: 2px;
-    text-align: center;
+  font-size: 1rem;
+  background-color: #c0d9b88a;
+  padding: 2px;
+  text-align: center;
+  margin: 5px;
+  width: 100%;
 }
 
-/* tous les sous titres */
 .subtitleAccueil {
-    font-size: 0.7rem;
-    font-family: avangarde, helvetica, sans-serif;
-    text-align: center;
+  font-size: 0.7rem;
+  text-align: center;
 }
 
-/* descriptions des sous titres */
 .vieAccueil {
-    background-color: #c0d9b88a;
-    padding: 2px;
-    text-align: left;
-    font-size: 0.8rem;
-    font-family: avangarde, helvetica, sans-serif;
+  background-color: #c0d9b88a;
+  padding: 2px;
+  text-align: left;
+  font-size: 1rem;
+  margin: 5px;
+  width: 100%;
 }
 
-adresse {
-    font-family: avangarde, helvetica, sans-serif;
-    font-size: 0.7rem;
-    font-style: none;
+.footerAccueil,
+.footerContact {
+  bottom: 0;
+  width: 100%;
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.titleActivites {
+  font-size: 2.5rem;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  color: #14310A;
+  margin: 30px 0;
+}
+
+.activites-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5px;
+}
+
+.activite {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #f0f5f1;
+  padding: 5px;
+}
+
+.activite img {
+  width: 72px;
+  height: 66px;
+}
+
+.InfoContact {
+  background-color: #c0d9b88a;
+  padding: 0 5px;
+}
+
+.formContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: #14310A 1px solid;
+  background-color: #c0d9b88a;
+  box-shadow: #359612 5px 5px 5px 0px;
+  border-radius: 10px;
+  width: 90%;
+  height: 300px;
+  margin: 50px 0 30px 0;
+}
+
+.formContact input,
+.formContact textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #14310A;
+  box-shadow: #14310A;
+  color: black;
+}
+
+.button {
+  background-color: #467e3378;
+  color: rgb(0, 0, 0);
+  box-shadow: #1bbc1e 5px 5px 5px 0px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f8fcf7;
+}
+
+.github {
+  width: 1%;
+  display: flex;
+  position: relative;
+  bottom: 0;
+  left: 35%;
+}
+
+main {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* ============================
+   Responsive TABLETTE (≥ 768px)
+=============================== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .titleAccueil {
+    font-size: 1.2rem;
+  }
+
+  .subtitleAccueil {
+    font-size: 1rem;
+  }
+
+  .welcomeAccueil,
+  .vieAccueil {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .titleActivites {
+    font-size: 2rem;
+  }
+
+  .activites-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+  }
+
+  .activite {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  .activite img {
+    width: 100px;
+    height: auto;
+  }
+
+  .formContact {
+    width: 50%;
+    height: auto;
+  }
+
+  main {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/* ============================
+   Responsive DESKTOP (≥ 1025px)
+=============================== */
+@media screen and (min-width: 1025px) {
+  .titleAccueil {
+    font-size: 2rem;
+  }
+
+  .subtitleAccueil {
+    font-size: 1.5rem;
+  }
+
+  .welcomeAccueil,
+  .vieAccueil {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  .titleActivites {
+    font-size: 3rem;
+  }
+
+  .activites-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-around;
+    padding-left: 2rem;
+  }
+
+  .activite {
+    flex: 1 1 30%;
+    max-width: 30%;
+  }
+
+  .activite img {
+    width: 120px;
+    height: auto;
+  }
+
+  .formContact {
+    width: 50%;
+    height: auto;
+  }
 }
